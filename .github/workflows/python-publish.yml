@@ -1,15 +1,14 @@
-name: Upload Python Package
+name: Publish Package
 on:
-  release:
-    types: [published]
-permissions:
-  contents: read
+  push:
+    tags:
+      - "v*.*.*"
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-     - name: Publish to pypi
-       uses: coveooss/pypi-publish-with-poetry@v1.0.0
-       with:
-         project-name: sphinx-rtd-size
-         pypi-token: ${{ secrets.PYPI_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Build and publish to pypi
+        uses: JRubics/poetry-publish@v1.10
+        with:
+          pypi_token: ${{ secrets.PYPI_API_TOKEN }
