@@ -18,6 +18,7 @@
 
 # pylint: disable=invalid-name
 # pylint: disable=missing-module-docstring
+# pylint: disable=redefined-builtin
 
 
 # -- Project information -----------------------------------------------------
@@ -46,4 +47,3 @@ extensions = [
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-
