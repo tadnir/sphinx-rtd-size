@@ -1,0 +1,5 @@
+.wy-nav-content {
+    {% if sphinx_rtd_size_width %}
+    max-width: {{ sphinx_rtd_size_width }};
+    {% endif %}
+}
