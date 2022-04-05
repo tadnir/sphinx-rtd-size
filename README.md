@@ -1,4 +1,18 @@
 # sphinx-rtd-size
 Sphinx extension for resizing your RTD theme
 
-TODO: add link to the docs after they are hosted somehow
+## Usage
+
+Install the package:
+
+`pip install sphinx-rtd-size`
+
+And in your `conf.py`:
+```
+    extensions = [
+        ...
+        'sphinx_rtd_size',
+    ]
+    
+    sphinx_rtd_size_width = "90%"
+```

@@ -1,21 +1,20 @@
-Introduction
-------------
+Welcome to sphinx-rtd-size's documentation!
+===========================================
 
 This extension allows you resize your sphinx RTD site.
 
-Usage
------
 
-`pip install sphinx-rtd-size`
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   
+   usage/index
 
-.. code-block::
-   :caption: conf.py
 
-    import sphinx_rtd_size
 
-    extensions = [
-        ...
-        'sphinx_rtd_size',
-    ]
-    
-    sphinx_rtd_size_width = "90%"
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
