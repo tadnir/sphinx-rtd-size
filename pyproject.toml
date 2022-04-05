@@ -4,12 +4,19 @@ version = "0.1.0"
 description = "Sphinx extension for resizing your RTD theme."
 authors = ["michael tadnir <tadnir50@gmail.com>"]
 license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tadnir/sphinx-rtd-size"
+include = [
+    "LICENSE",
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.6"
-Sphinx = "^1.8"
+Sphinx = "^2"
 
 [tool.poetry.dev-dependencies]
+sphinx-rtd-theme = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
