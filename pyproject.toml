@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx-rtd-size"
-version = "0.1.0"
+version = "0.2.0"
 description = "Sphinx extension for resizing your RTD theme."
 authors = ["michael tadnir <tadnir50@gmail.com>"]
 license = "MIT"
